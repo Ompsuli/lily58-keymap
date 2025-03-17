@@ -1,2 +1,26 @@
-# lily58-keymap
-This is keymap for lily58 split keyboard
+# ompsuli-lily58-keymap
+This my is keymap for lily58 rev1 split keyboard
+
+## Installation
+
+### Download tools
+
+1. Download tools
+[QMK MSYS](https://msys.qmk.fm/) for creating keymap file for your keyboard.
+[QMK Toolbox](https://qmk.fm/toolbox) for flashing keyboard.
+
+2. Clone files
+On Windows:
+```
+dir %USERPROFILE%\qmk_firmware\keyboards\lily58\keymaps
+git clone https://github.com/Ompsuli/ompsuli-lily58-keymap.git
+```
+
+3. Create keymap file
+  - Open QMK MSYS
+  - Write `qmk compile -kb qmk_firmware/keyboards/lily58/keymaps/ompsuli-lily58-keymap -km default`
+
+4. Flash your keyboard
+   - Open QMK Toolbox
+   - Choose HEX-file (My path: %USERPROFILE%/qmk_firmware/lily58_rev1_default.hex
+   - Press Flash
